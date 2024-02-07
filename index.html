@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Witch Creek Designs</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .hero { background-color: #311B92; color: white; padding: 50px 20px; text-align: center; }
-        .content { background-color: #CE93D8; padding: 20px; }
-        h1, h2 { text-align: center; }
-        .services, .contact { text-align: center; margin-top: min-height: calc(100vh - 40px); }
-        footer { background-color: #311B92; color: white; text-align: center; padding: 10px 20px; position: relative; bottom: 0; width: 100%; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Enables flexbox */
+            flex-direction: column; /* Stacks children vertically */
+            min-height: 100vh; /* Ensures body is at least viewport height */
+        }
+        .hero {
+            background-color: #311B92;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .content {
+            background-color: #CE93D8;
+            padding: 20px;
+            flex: 1; /* Allows content to expand and fill available space */
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .services, .contact {
+            text-align: center;
+            margin-top: 20px; /* Adjusted to ensure proper spacing */
+        }
+        footer {
+            background-color: #311B92;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -45,3 +72,4 @@
 
 </body>
 </html>
+
